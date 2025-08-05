@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="dark_text">#333333</color>
+    <color name="green_pressed">#FFC107</color>
+    <color name="hint_text">#888888</color>
+    <color name="light_gray_bg">#F0F0F0</color>
+    <color name="primary_green">#FFC107</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Solaro</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="stats">Stats</string>
+    <style name="Theme.Solaro" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorPrimaryVariant">@color/primary_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/primary_green</item>
+        <item name="colorSecondaryVariant">@color/green_pressed</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="materialButtonStyle">@style/Widget.MaterialComponents.Button.UnelevatedButton</item>
+    </style>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when mouse is hovering (pointer is over) -->
+    <item android:color="#FFD600" android:state_hovered="true"/>
+    <!-- Default state -->
+    <item android:color="@android:color/holo_orange_light"/>
+</selector>

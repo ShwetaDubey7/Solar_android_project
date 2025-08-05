@@ -1,0 +1,126 @@
+[
+    {
+        "merged": "com.solaro.app-debug-59:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.solaro.app-main-61:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.solaro.app-main-61:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/mipmap-hdpi_oauth.png.flat",
+        "source": "com.solaro.app-main-61:/mipmap-hdpi/oauth.png"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/drawable_logo_solaro.png.flat",
+        "source": "com.solaro.app-main-61:/drawable/logo_solaro.png"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.solaro.app-main-61:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/drawable_register_text_color_selector.xml.flat",
+        "source": "com.solaro.app-main-61:/drawable/register_text_color_selector.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.solaro.app-main-61:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/drawable_edittext_bg.xml.flat",
+        "source": "com.solaro.app-main-61:/drawable/edittext_bg.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/drawable_edittext_rounded_bg.xml.flat",
+        "source": "com.solaro.app-main-61:/drawable/edittext_rounded_bg.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.solaro.app-main-61:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/menu_bottom_nav.xml.flat",
+        "source": "com.solaro.app-main-61:/menu/bottom_nav.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.solaro.app-main-61:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/drawable_rounded_square_bg.xml.flat",
+        "source": "com.solaro.app-main-61:/drawable/rounded_square_bg.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/layout_acitivity_login.xml.flat",
+        "source": "com.solaro.app-main-61:/layout/acitivity_login.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.solaro.app-main-61:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/drawable_register_text_color.xml.flat",
+        "source": "com.solaro.app-main-61:/drawable/register_text_color.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.solaro.app-main-61:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.solaro.app-main-61:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.solaro.app-main-61:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.solaro.app-main-61:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/mipmap-hdpi_logo_solaro.png.flat",
+        "source": "com.solaro.app-main-61:/mipmap-hdpi/logo_solaro.png"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/xml_backup_rules.xml.flat",
+        "source": "com.solaro.app-main-61:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.solaro.app-main-61:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/drawable_button_bg.xml.flat",
+        "source": "com.solaro.app-main-61:/drawable/button_bg.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/xml_data_extraction_rules.xml.flat",
+        "source": "com.solaro.app-main-61:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/layout_activity_register.xml.flat",
+        "source": "com.solaro.app-main-61:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/layout_activity_main.xml.flat",
+        "source": "com.solaro.app-main-61:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/layout_activity_splash.xml.flat",
+        "source": "com.solaro.app-main-61:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/drawable_rounded_button.xml.flat",
+        "source": "com.solaro.app-main-61:/drawable/rounded_button.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.solaro.app-main-61:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.solaro.app-debug-59:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.solaro.app-main-61:/mipmap-xhdpi/ic_launcher.webp"
+    }
+]

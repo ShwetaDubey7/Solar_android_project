@@ -1,0 +1,13 @@
+C:\Users\dubey\Solaro\app\src\main\java\com\solaro\app\LoginActivity.kt
+C:\Users\dubey\Solaro\app\src\main\java\com\solaro\app\SplashActivity.kt
+C:\Users\dubey\Solaro\app\src\main\java\com\solaro\models\User.kt
+C:\Users\dubey\Solaro\app\src\main\java\com\solaro\app\RegisterActivity.kt
+C:\Users\dubey\Solaro\app\src\main\java\com\solaro\ui\theme\Color.kt
+C:\Users\dubey\Solaro\app\src\main\java\com\solaro\ui\theme\Type.kt
+C:\Users\dubey\Solaro\app\src\main\java\com\solaro\utils\SessionManager.kt
+C:\Users\dubey\Solaro\app\src\main\java\com\solaro\utils\Passwordhasher.kt
+C:\Users\dubey\Solaro\app\src\main\java\com\solaro\models\SolarPanel.kt
+C:\Users\dubey\Solaro\app\src\main\java\com\solaro\MainActivity.kt
+C:\Users\dubey\Solaro\app\src\main\java\com\solaro\ui\theme\Theme.kt
+C:\Users\dubey\Solaro\app\src\main\java\com\solaro\app\DatabaseHelper.kt
+C:\Users\dubey\Solaro\app\src\main\java\com\solaro\models\Payment.kt
