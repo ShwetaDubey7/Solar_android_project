@@ -6,7 +6,15 @@
 
     <uses-sdk
         android:minSdkVersion="29"
-        android:targetSdkVersion="34" />
+        android:targetSdkVersion="35" />
+
+    <!-- Permissions for Location and Camera -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <permission
         android:name="com.solaro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -17,18 +25,21 @@
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-        android:dataExtractionRules="@xml/data_extraction_rules"
         android:debuggable="true"
         android:extractNativeLibs="false"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Solaro" >
+
+        <!--
+          FIX: Splash Activity is declared with its full path and set as the LAUNCHER.
+          The '.' in the name is a shortcut for the package name defined above.
+        -->
         <activity
-            android:name="com.solaro.LoginActivity"
+            android:name="com.solaro.app.activity.SplashActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,21 +47,43 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.solaro.RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.solaro.UserHomepageActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.solaro.AdminHomepageActivity"
-            android:exported="false" />
+
+        <!-- Declare all other activities using the '.' shortcut -->
+        <activity android:name="com.solaro.app.MainActivity" />
+        <activity android:name="com.solaro.app.activity.LoginActivity" />
+        <activity android:name="com.solaro.app.activity.RegisterActivity" />
+        <activity android:name="com.solaro.app.activity.UserDashboardActivity" />
+        <activity android:name="com.solaro.app.activity.AdminDashboardActivity" />
+        <activity android:name="com.solaro.app.activity.RequestInstallationActivity" />
+        <activity android:name="com.solaro.app.activity.ManageInstallationsActivity" />
+        <activity android:name="com.solaro.app.activity.ManageUsersActivity" />
+        <activity android:name="com.solaro.app.activity.RequestMaintenanceActivity" />
+        <activity android:name="com.solaro.app.activity.ManageMaintenanceActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.solaro.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
         <activity
             android:name="androidx.compose.ui.tooling.PreviewActivity"
             android:exported="true" />
         <activity
             android:name="androidx.activity.ComponentActivity"
             android:exported="true" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

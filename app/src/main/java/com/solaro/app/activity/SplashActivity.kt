@@ -1,15 +1,13 @@
-@file:Suppress("DEPRECATION")
+package com.solaro.app.activity
 
-package com.solaro
-
-//noinspection SuspiciousImport
-import android.R
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
-import com.solaro.app.MainActivity
+import com.solaro.R
+import com.solaro.app.LoginActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
@@ -17,9 +15,10 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        Handler().postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
+        // This handler will start the MainActivity after a 2-second delay
+        Handler(Looper.getMainLooper()).postDelayed({
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish() // Close this activity so the user can't go back to it
         }, 2000)
     }
 }

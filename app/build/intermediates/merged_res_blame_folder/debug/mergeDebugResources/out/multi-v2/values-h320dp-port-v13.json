@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.solaro.app-mergeDebugResources-57:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "outputFile": "com.solaro.app-mergeDebugResources-59:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\dubey\\.gradle\\caches\\transforms-4\\bedb6d64c16eb987e4cfcbd44b4435f1\\transformed\\material-1.12.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "source": "C:\\Users\\dubey\\.gradle\\caches\\8.13\\transforms\\6a84bbbe48da442a7396ed3446d29bf7\\transformed\\material-1.12.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

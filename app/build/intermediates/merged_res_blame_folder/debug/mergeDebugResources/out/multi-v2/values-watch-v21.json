@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.solaro.app-mergeDebugResources-57:/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "com.solaro.app-mergeDebugResources-59:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\dubey\\.gradle\\caches\\transforms-4\\37ea7829788b5212e454f632070d8d2c\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\dubey\\.gradle\\caches\\8.13\\transforms\\f6d3fed00e0243396c9d45edccc1d98e\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

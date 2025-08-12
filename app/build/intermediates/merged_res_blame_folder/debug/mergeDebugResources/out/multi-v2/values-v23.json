@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.solaro.app-mergeDebugResources-57:/values-v23/values-v23.xml",
+            "outputFile": "com.solaro.app-mergeDebugResources-59:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\dubey\\.gradle\\caches\\transforms-4\\bedb6d64c16eb987e4cfcbd44b4435f1\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\dubey\\.gradle\\caches\\8.13\\transforms\\6a84bbbe48da442a7396ed3446d29bf7\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dubey\\.gradle\\caches\\transforms-4\\5527aa6d91183f75b3bf280d2e47db14\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\dubey\\.gradle\\caches\\8.13\\transforms\\39e387648f6173d37784180325093064\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dubey\\.gradle\\caches\\transforms-4\\37ea7829788b5212e454f632070d8d2c\\transformed\\appcompat-1.6.1\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\dubey\\.gradle\\caches\\8.13\\transforms\\f6d3fed00e0243396c9d45edccc1d98e\\transformed\\appcompat-1.6.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

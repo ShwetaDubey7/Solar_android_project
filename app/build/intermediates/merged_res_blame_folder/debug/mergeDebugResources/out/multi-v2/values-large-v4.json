@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.solaro.app-mergeDebugResources-57:/values-large-v4/values-large-v4.xml",
+            "outputFile": "com.solaro.app-mergeDebugResources-59:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\dubey\\.gradle\\caches\\transforms-4\\bedb6d64c16eb987e4cfcbd44b4435f1\\transformed\\material-1.12.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\dubey\\.gradle\\caches\\8.13\\transforms\\6a84bbbe48da442a7396ed3446d29bf7\\transformed\\material-1.12.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dubey\\.gradle\\caches\\transforms-4\\37ea7829788b5212e454f632070d8d2c\\transformed\\appcompat-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\dubey\\.gradle\\caches\\8.13\\transforms\\f6d3fed00e0243396c9d45edccc1d98e\\transformed\\appcompat-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
