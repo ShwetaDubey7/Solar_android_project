@@ -1,0 +1,129 @@
+stable class MainActivity {
+  <runtime stability> = Stable
+}
+unstable class AdminDashboardActivity {
+  unstable var drawerLayout: DrawerLayout
+  unstable var sessionManager: SessionManager
+  <runtime stability> = Unstable
+}
+unstable class LoginActivity {
+  stable var dbHelper: DatabaseHelper
+  unstable var sessionManager: SessionManager
+  <runtime stability> = Unstable
+}
+unstable class ManageInstallationsActivity {
+  stable var dbHelper: DatabaseHelper
+  unstable var installationsAdapter: InstallationAdapter
+  unstable var installationList: ArrayList<Installation>
+  <runtime stability> = Unstable
+}
+unstable class InstallationViewHolder {
+  unstable val addressTextView: TextView
+  unstable val statusTextView: TextView
+  unstable val idTextView: TextView
+  unstable val updateButton: Button
+  unstable val deleteButton: Button
+  <runtime stability> = Unstable
+}
+unstable class InstallationAdapter {
+  unstable val installations: MutableList<Installation>
+  stable val refreshData: Function0<Unit>
+  <runtime stability> = Unstable
+}
+unstable class ManageMaintenanceActivity {
+  stable var dbHelper: DatabaseHelper
+  unstable var maintenanceAdapter: MaintenanceAdapter
+  unstable var ticketList: ArrayList<MaintenanceTicket>
+  <runtime stability> = Unstable
+}
+unstable class MaintenanceViewHolder {
+  unstable val description: TextView
+  unstable val status: TextView
+  unstable val image: ImageView
+  unstable val updateButton: Button
+  unstable val deleteButton: Button
+  <runtime stability> = Unstable
+}
+unstable class MaintenanceAdapter {
+  unstable val tickets: List<MaintenanceTicket>
+  stable val refreshData: Function0<Unit>
+  <runtime stability> = Unstable
+}
+unstable class ManageUsersActivity {
+  stable var dbHelper: DatabaseHelper
+  unstable var usersAdapter: UserAdapter
+  unstable var userList: ArrayList<User>
+  <runtime stability> = Unstable
+}
+unstable class UserViewHolder {
+  unstable val username: TextView
+  unstable val email: TextView
+  unstable val deleteButton: Button
+  <runtime stability> = Unstable
+}
+unstable class UserAdapter {
+  unstable val users: List<User>
+  stable val refreshData: Function0<Unit>
+  <runtime stability> = Unstable
+}
+unstable class RegisterActivity {
+  stable var dbHelper: DatabaseHelper
+  <runtime stability> = Unstable
+}
+stable class RequestInstallationActivity {
+  <runtime stability> = Stable
+}
+unstable class RequestMaintenanceActivity {
+  stable var dbHelper: DatabaseHelper
+  unstable var sessionManager: SessionManager
+  unstable var etDescription: EditText
+  unstable var ivPhotoPreview: ImageView
+  unstable var btnTakePhoto: Button
+  unstable var btnSubmit: Button
+  unstable var latestTmpUri: Uri?
+  stable var photoPath: String?
+  unstable val takeImageResult: ActivityResultLauncher<Uri>
+  <runtime stability> = Unstable
+}
+stable class SplashActivity {
+  <runtime stability> = Stable
+}
+unstable class UserDashboardActivity {
+  unstable var sessionManager: SessionManager
+  <runtime stability> = Unstable
+}
+stable class DatabaseHelper {
+  <runtime stability> = Stable
+}
+stable class Installation {
+  stable val id: Long
+  stable val userId: Long
+  stable val address: String
+  stable val status: String
+  <runtime stability> = Stable
+}
+stable class MaintenanceTicket {
+  stable val id: Long
+  stable val userId: Long
+  stable val description: String
+  stable val imagePath: String?
+  stable val status: String
+  <runtime stability> = Stable
+}
+stable class User {
+  stable val id: Long
+  stable val username: String
+  stable val email: String
+  stable val passwordHash: String
+  stable val userType: String
+  stable val address: String?
+  <runtime stability> = Stable
+}
+stable class PasswordHasher {
+  <runtime stability> = Stable
+}
+unstable class SessionManager {
+  unstable val prefs: SharedPreferences
+  unstable val editor: Editor
+  <runtime stability> = Unstable
+}

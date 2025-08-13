@@ -1,0 +1,359 @@
+Index: app/src/main/java/com/solaro/Database/DatabaseHelper.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/solaro/Database/DatabaseHelper.kt b/app/src/main/java/com/solaro/database/DatabaseHelper.kt
+rename from app/src/main/java/com/solaro/Database/DatabaseHelper.kt
+rename to app/src/main/java/com/solaro/database/DatabaseHelper.kt
+--- a/app/src/main/java/com/solaro/Database/DatabaseHelper.kt	
++++ b/app/src/main/java/com/solaro/database/DatabaseHelper.kt	
+@@ -1,20 +1,27 @@
+-package com.app.solaro.database
++package com.solaro.database
+ 
++import android.annotation.SuppressLint
+ import android.content.ContentValues
+ import android.content.Context
+ import android.database.Cursor
+ import android.database.sqlite.SQLiteDatabase
+ import android.database.sqlite.SQLiteOpenHelper
+-import com.solaro.models.User.User
++import com.solaro.models.Installation
++import com.solaro.models.MaintenanceTicket
++import com.solaro.models.user.User
+ 
++/**
++ * Manages all database creation and version management.
++ * Provides methods for all CRUD (Create, Read, Update, Delete) operations.
++ */
+ class DatabaseHelper(context: Context) :
+     SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
+ 
+     companion object {
+-        private const val DATABASE_VERSION = 1 // Increment this if you change the schema
++        private const val DATABASE_VERSION = 1
+         private const val DATABASE_NAME = "Solaro.db"
+ 
+-        // --- Users Table ---
++        // Users Table
+         private const val TABLE_USERS = "users"
+         private const val KEY_USER_ID_COL = "id"
+         private const val KEY_USERNAME = "username"
+@@ -22,24 +29,22 @@
+         private const val KEY_PASSWORD_HASH = "password_hash"
+         private const val KEY_USER_TYPE = "user_type"
+ 
+-        // --- Installations Table ---
++        // Installations Table
+         private const val TABLE_INSTALLATIONS = "installations"
+         private const val KEY_INSTALL_ID = "id"
+         private const val KEY_INSTALL_USER_ID = "user_id"
+         private const val KEY_ADDRESS = "address"
+         private const val KEY_STATUS = "status"
+ 
+-        // --- Maintenance Table ---
++        // Maintenance Table
+         private const val TABLE_MAINTENANCE = "maintenance"
+         private const val KEY_MAINT_ID = "id"
+         private const val KEY_MAINT_USER_ID = "user_id"
+         private const val KEY_DESCRIPTION = "description"
+         private const val KEY_IMAGE_PATH = "image_path"
+-        // Re-using KEY_STATUS for this table
+     }
+ 
+     override fun onCreate(db: SQLiteDatabase?) {
+-        // Create Users Table
+         val createUsersTable = ("CREATE TABLE " + TABLE_USERS + "("
+                 + KEY_USER_ID_COL + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+                 + KEY_USERNAME + " TEXT UNIQUE,"
+@@ -48,7 +53,6 @@
+                 + KEY_USER_TYPE + " TEXT" + ")")
+         db?.execSQL(createUsersTable)
+ 
+-        // Create Installations Table
+         val createInstallationsTable = ("CREATE TABLE " + TABLE_INSTALLATIONS + "("
+                 + KEY_INSTALL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+                 + KEY_INSTALL_USER_ID + " INTEGER,"
+@@ -56,7 +60,6 @@
+                 + KEY_STATUS + " TEXT" + ")")
+         db?.execSQL(createInstallationsTable)
+ 
+-        // Create Maintenance Table
+         val createMaintenanceTable = ("CREATE TABLE " + TABLE_MAINTENANCE + "("
+                 + KEY_MAINT_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+                 + KEY_MAINT_USER_ID + " INTEGER,"
+@@ -73,10 +76,7 @@
+         onCreate(db)
+     }
+ 
+-    // =====================================================================================
+     // ## User Functions ##
+-    // =====================================================================================
+-
+     fun addUser(user: User): Long {
+         val db = this.writableDatabase
+         val contentValues = ContentValues()
+@@ -89,17 +89,18 @@
+         return success
+     }
+ 
++    @SuppressLint("Range")
+     fun getUserByUsername(username: String): User? {
+         val db = this.readableDatabase
+         val cursor: Cursor = db.rawQuery("SELECT * FROM $TABLE_USERS WHERE $KEY_USERNAME = ?", arrayOf(username))
+         var user: User? = null
+         if (cursor.moveToFirst()) {
+             user = User(
+-                id = cursor.getLong(cursor.getColumnIndexOrThrow(KEY_USER_ID_COL)),
+-                username = cursor.getString(cursor.getColumnIndexOrThrow(KEY_USERNAME)),
+-                email = cursor.getString(cursor.getColumnIndexOrThrow(KEY_EMAIL)),
+-                passwordHash = cursor.getString(cursor.getColumnIndexOrThrow(KEY_PASSWORD_HASH)),
+-                userType = cursor.getString(cursor.getColumnIndexOrThrow(KEY_USER_TYPE))
++                id = cursor.getLong(cursor.getColumnIndex(KEY_USER_ID_COL)),
++                username = cursor.getString(cursor.getColumnIndex(KEY_USERNAME)),
++                email = cursor.getString(cursor.getColumnIndex(KEY_EMAIL)),
++                passwordHash = cursor.getString(cursor.getColumnIndex(KEY_PASSWORD_HASH)),
++                userType = cursor.getString(cursor.getColumnIndex(KEY_USER_TYPE))
+             )
+         }
+         cursor.close()
+@@ -107,17 +108,18 @@
+         return user
+     }
+ 
++    @SuppressLint("Range")
+     fun getUserByEmail(email: String): User? {
+         val db = this.readableDatabase
+         val cursor: Cursor = db.rawQuery("SELECT * FROM $TABLE_USERS WHERE $KEY_EMAIL = ?", arrayOf(email))
+         var user: User? = null
+         if (cursor.moveToFirst()) {
+             user = User(
+-                id = cursor.getLong(cursor.getColumnIndexOrThrow(KEY_USER_ID_COL)),
+-                username = cursor.getString(cursor.getColumnIndexOrThrow(KEY_USERNAME)),
+-                email = cursor.getString(cursor.getColumnIndexOrThrow(KEY_EMAIL)),
+-                passwordHash = cursor.getString(cursor.getColumnIndexOrThrow(KEY_PASSWORD_HASH)),
+-                userType = cursor.getString(cursor.getColumnIndexOrThrow(KEY_USER_TYPE))
++                id = cursor.getLong(cursor.getColumnIndex(KEY_USER_ID_COL)),
++                username = cursor.getString(cursor.getColumnIndex(KEY_USERNAME)),
++                email = cursor.getString(cursor.getColumnIndex(KEY_EMAIL)),
++                passwordHash = cursor.getString(cursor.getColumnIndex(KEY_PASSWORD_HASH)),
++                userType = cursor.getString(cursor.getColumnIndex(KEY_USER_TYPE))
+             )
+         }
+         cursor.close()
+@@ -125,34 +127,138 @@
+         return user
+     }
+ 
+-    // =====================================================================================
++    @SuppressLint("Range")
++    fun getAllUsers(): List<User> {
++        val userList = ArrayList<User>()
++        val selectQuery = "SELECT * FROM $TABLE_USERS WHERE $KEY_USER_TYPE != 'admin'"
++        val db = this.readableDatabase
++        val cursor = db.rawQuery(selectQuery, null)
++
++        if (cursor.moveToFirst()) {
++            do {
++                val user = User(
++                    id = cursor.getLong(cursor.getColumnIndex(KEY_USER_ID_COL)),
++                    username = cursor.getString(cursor.getColumnIndex(KEY_USERNAME)),
++                    email = cursor.getString(cursor.getColumnIndex(KEY_EMAIL)),
++                    passwordHash = cursor.getString(cursor.getColumnIndex(KEY_PASSWORD_HASH)),
++                    userType = cursor.getString(cursor.getColumnIndex(KEY_USER_TYPE))
++                )
++                userList.add(user)
++            } while (cursor.moveToNext())
++        }
++        cursor.close()
++        db.close()
++        return userList
++    }
++
++    fun deleteUser(userId: Long): Int {
++        val db = this.writableDatabase
++        val success = db.delete(TABLE_USERS, "$KEY_USER_ID_COL=?", arrayOf(userId.toString()))
++        db.close()
++        return success
++    }
++
+     // ## Installation Functions ##
+-    // =====================================================================================
+-
+-    fun addInstallationRequest(userId: Int, address: String): Long {
++    fun addInstallationRequest(userId: Long, address: String): Long {
+         val db = this.writableDatabase
+         val contentValues = ContentValues()
+         contentValues.put(KEY_INSTALL_USER_ID, userId)
+         contentValues.put(KEY_ADDRESS, address)
+-        contentValues.put(KEY_STATUS, "Pending") // Default status
++        contentValues.put(KEY_STATUS, "Pending")
+         val success = db.insert(TABLE_INSTALLATIONS, null, contentValues)
+         db.close()
+         return success
+     }
+ 
+-    // =====================================================================================
++    @SuppressLint("Range")
++    fun getAllInstallations(): List<Installation> {
++        val installationList = ArrayList<Installation>()
++        val selectQuery = "SELECT * FROM $TABLE_INSTALLATIONS"
++        val db = this.readableDatabase
++        val cursor = db.rawQuery(selectQuery, null)
++
++        if (cursor.moveToFirst()) {
++            do {
++                val installation = Installation(
++                    id = cursor.getLong(cursor.getColumnIndex(KEY_INSTALL_ID)),
++                    userId = cursor.getLong(cursor.getColumnIndex(KEY_INSTALL_USER_ID)),
++                    address = cursor.getString(cursor.getColumnIndex(KEY_ADDRESS)),
++                    status = cursor.getString(cursor.getColumnIndex(KEY_STATUS))
++                )
++                installationList.add(installation)
++            } while (cursor.moveToNext())
++        }
++        cursor.close()
++        db.close()
++        return installationList
++    }
++
++    fun updateInstallationStatus(installId: Long, newStatus: String): Int {
++        val db = this.writableDatabase
++        val contentValues = ContentValues()
++        contentValues.put(KEY_STATUS, newStatus)
++        val success = db.update(TABLE_INSTALLATIONS, contentValues, "$KEY_INSTALL_ID=?", arrayOf(installId.toString()))
++        db.close()
++        return success
++    }
++
++    fun deleteInstallation(installId: Long): Int {
++        val db = this.writableDatabase
++        val success = db.delete(TABLE_INSTALLATIONS, "$KEY_INSTALL_ID=?", arrayOf(installId.toString()))
++        db.close()
++        return success
++    }
++
+     // ## Maintenance Functions ##
+-    // =====================================================================================
+-
+     fun addMaintenanceTicket(userId: Long, description: String, imagePath: String?): Long {
+         val db = this.writableDatabase
+         val contentValues = ContentValues()
+         contentValues.put(KEY_MAINT_USER_ID, userId)
+         contentValues.put(KEY_DESCRIPTION, description)
+         contentValues.put(KEY_IMAGE_PATH, imagePath)
+-        contentValues.put(KEY_STATUS, "Open") // Default status
++        contentValues.put(KEY_STATUS, "Open")
+         val success = db.insert(TABLE_MAINTENANCE, null, contentValues)
+         db.close()
+         return success
+     }
+-}
+\ No newline at end of file
++
++    @SuppressLint("Range")
++    fun getAllMaintenanceTickets(): List<MaintenanceTicket> {
++        val ticketList = ArrayList<MaintenanceTicket>()
++        val selectQuery = "SELECT * FROM $TABLE_MAINTENANCE"
++        val db = this.readableDatabase
++        val cursor = db.rawQuery(selectQuery, null)
++
++        if (cursor.moveToFirst()) {
++            do {
++                val ticket = MaintenanceTicket(
++                    id = cursor.getLong(cursor.getColumnIndex(KEY_MAINT_ID)),
++                    userId = cursor.getLong(cursor.getColumnIndex(KEY_MAINT_USER_ID)),
++                    description = cursor.getString(cursor.getColumnIndex(KEY_DESCRIPTION)),
++                    imagePath = cursor.getString(cursor.getColumnIndex(KEY_IMAGE_PATH)),
++                    status = cursor.getString(cursor.getColumnIndex(KEY_STATUS))
++                )
++                ticketList.add(ticket)
++            } while (cursor.moveToNext())
++        }
++        cursor.close()
++        db.close()
++        return ticketList
++    }
++
++    fun updateMaintenanceStatus(ticketId: Long, newStatus: String): Int {
++        val db = this.writableDatabase
++        val contentValues = ContentValues()
++        contentValues.put(KEY_STATUS, newStatus)
++        val success = db.update(TABLE_MAINTENANCE, contentValues, "$KEY_MAINT_ID=?", arrayOf(ticketId.toString()))
++        db.close()
++        return success
++    }
++
++    fun deleteMaintenanceTicket(ticketId: Long): Int {
++        val db = this.writableDatabase
++        val success = db.delete(TABLE_MAINTENANCE, "$KEY_MAINT_ID=?", arrayOf(ticketId.toString()))
++        db.close()
++        return success
++    }
++}
+Index: app/src/main/java/com/solaro/utils/Passwordhasher.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/solaro/utils/Passwordhasher.kt b/app/src/main/java/com/solaro/utils/PasswordHasher.kt
+rename from app/src/main/java/com/solaro/utils/Passwordhasher.kt
+rename to app/src/main/java/com/solaro/utils/PasswordHasher.kt
+--- a/app/src/main/java/com/solaro/utils/Passwordhasher.kt	
++++ b/app/src/main/java/com/solaro/utils/PasswordHasher.kt	
+@@ -1,27 +1,31 @@
+ package com.solaro.utils
+ 
+-class Passwordhasher {
+-    package com.yourcompany.solaro.utils
+-
+-    import at.favre.lib.crypto.bcrypt.BCrypt // We need to add a dependency for this!
++import java.security.MessageDigest
+ 
+-    object `PasswordHasher.kt` {
+-        // This is a dummy implementation. In a real app, use a strong hashing library like BCrypt.
+-        // For a mini-project, you can use a simpler approach initially, but be aware of security.
++/**
++ * A utility object for handling password security.
++ */
++object PasswordHasher {
+ 
+-        // To use BCrypt, add this to your app/build.gradle (Module: app) dependencies:
+-        // implementation 'at.favre.lib.crypto:bcrypt:0.9.0'
+-        // Don't forget to Sync Project with Gradle Files after adding.
+-
+-        private val BCRYPT_VERSION = BCrypt.Version.VERSION_2A
+-        private val BCRYPT_COST = 10 // Higher cost means more secure but slower hashing
+-
+-        fun hashPassword(password: String): String {
+-            return BCrypt.with(BCRYPT_VERSION).hashToString(BCRYPT_COST, password.toCharArray())
+-        }
++    /**
++     * Hashes a plain-text password using the SHA-256 algorithm.
++     * @param password The plain-text password to hash.
++     * @return A hexadecimal string representation of the hashed password.
++     */
++    fun hashPassword(password: String): String {
++        val bytes = password.toByteArray()
++        val md = MessageDigest.getInstance("SHA-256")
++        val digest = md.digest(bytes)
++        return digest.fold("") { str, it -> str + "%02x".format(it) }
++    }
+ 
+-        fun verifyPassword(password: String, hashedPassword: String): Boolean {
+-            return BCrypt.verifyer().verify(password.toCharArray(), hashedPassword.toCharArray()).verified
+-        }
+-    }
+-}
+\ No newline at end of file
++    /**
++     * Verifies a plain-text password against a stored hash.
++     * @param password The plain-text password to check.
++     * @param storedHash The hash from the database to compare against.
++     * @return True if the passwords match, false otherwise.
++     */
++    fun verifyPassword(password: String, storedHash: String): Boolean {
++        return hashPassword(password) == storedHash
++    }
++}

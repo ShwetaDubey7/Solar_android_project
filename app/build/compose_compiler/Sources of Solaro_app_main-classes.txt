@@ -1,0 +1,5 @@
+unstable class AdminDashboardActivity {
+  unstable var drawerLayout: DrawerLayout
+  stable var sessionManager: SessionManager
+  <runtime stability> = Unstable
+}
