@@ -1,0 +1,25 @@
+/.kotlin/
+
+# Generated files
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Build directory
+/build
+
+# Local properties file (sensitive info)
+local.properties
+
+# Gradle directory
+.gradle/
+captures/
+*.jar
+*.keystore
+
+# Android Studio/IntelliJ IDEA specific files
+/.idea/
+*.iml
+.DS_Store

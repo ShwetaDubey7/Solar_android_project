@@ -1,0 +1,270 @@
+[
+    {
+        "merged": "com.solaro.app-release-36:/menu_dashboard_menu.xml.flat",
+        "source": "com.solaro.app-main-37:/menu/dashboard_menu.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_ic_logout.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/ic_logout.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.solaro.app-main-37:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_activity_manage_maintenance.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/activity_manage_maintenance.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/xml_backup_rules.xml.flat",
+        "source": "com.solaro.app-main-37:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.solaro.app-main-37:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_list_item_request_history.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/list_item_request_history.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_ic_add.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/ic_add.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_dialog_add_edit_product.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/dialog_add_edit_product.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_activity_manage_installations.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/activity_manage_installations.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_list_item_product_user.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/list_item_product_user.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.solaro.app-main-37:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_list_item_user.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/list_item_user.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.solaro.app-main-37:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_list_item_product_admin.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/list_item_product_admin.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_activity_user_dashboard.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/activity_user_dashboard.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/menu_user_drawer_menu.xml.flat",
+        "source": "com.solaro.app-main-37:/menu/user_drawer_menu.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_activity_shop.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/activity_shop.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.solaro.app-main-37:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_activity_login.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_activity_request_installation.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/activity_request_installation.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_activity_splash.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_nav_header.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/nav_header.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.solaro.app-main-37:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_img_solar_about.jpg.flat",
+        "source": "com.solaro.app-main-37:/drawable/img_solar_about.jpg"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.solaro.app-main-37:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/xml_file_provider_paths.xml.flat",
+        "source": "com.solaro.app-main-37:/xml/file_provider_paths.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_ic_manage_maintenance.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/ic_manage_maintenance.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.solaro.app-main-37:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_ic_manage_users.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/ic_manage_users.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_list_item_installation.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/list_item_installation.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_activity_manage_users.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/activity_manage_users.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_activity_request_maintenance.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/activity_request_maintenance.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_activity_about.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/activity_about.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_activity_register.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/xml_data_extraction_rules.xml.flat",
+        "source": "com.solaro.app-main-37:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_splash_icon.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/splash_icon.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_ic_arrow_back.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/ic_arrow_back.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_ic_manage_installs.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/ic_manage_installs.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_ic_reports.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/ic_reports.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_ic_info.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/ic_info.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.solaro.app-main-37:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_logo_solaro.png.flat",
+        "source": "com.solaro.app-main-37:/drawable/logo_solaro.png"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_ic_shop.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/ic_shop.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_ic_add_home.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/ic_add_home.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_ic_people.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/ic_people.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.solaro.app-main-37:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.solaro.app-main-37:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_ic_delete.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/ic_delete.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.solaro.app-main-37:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.solaro.app-main-37:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_activity_payment.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/activity_payment.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_list_item_maintenance.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/list_item_maintenance.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_img_solar_header.jpg.flat",
+        "source": "com.solaro.app-main-37:/drawable/img_solar_header.jpg"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/menu_admin_drawer_menu.xml.flat",
+        "source": "com.solaro.app-main-37:/menu/admin_drawer_menu.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_ic_edit.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/ic_edit.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.solaro.app-main-37:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_nav_header_user.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/nav_header_user.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.solaro.app-main-37:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_ic_build.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/ic_build.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_activity_manage_products.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/activity_manage_products.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.solaro.app-main-37:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.solaro.app-main-37:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/layout_activity_admin_dashboard.xml.flat",
+        "source": "com.solaro.app-main-37:/layout/activity_admin_dashboard.xml"
+    },
+    {
+        "merged": "com.solaro.app-release-36:/drawable_status_background.xml.flat",
+        "source": "com.solaro.app-main-37:/drawable/status_background.xml"
+    }
+]

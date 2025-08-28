@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/dialog_add_edit_product.xml",
+        "source": "com.solaro.app-main-37:/layout/dialog_add_edit_product.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/list_item_product_user.xml",
+        "source": "com.solaro.app-main-37:/layout/list_item_product_user.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/activity_manage_installations.xml",
+        "source": "com.solaro.app-main-37:/layout/activity_manage_installations.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/activity_login.xml",
+        "source": "com.solaro.app-main-37:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/nav_header_user.xml",
+        "source": "com.solaro.app-main-37:/layout/nav_header_user.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/activity_manage_maintenance.xml",
+        "source": "com.solaro.app-main-37:/layout/activity_manage_maintenance.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/activity_shop.xml",
+        "source": "com.solaro.app-main-37:/layout/activity_shop.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/list_item_user.xml",
+        "source": "com.solaro.app-main-37:/layout/list_item_user.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/list_item_product_admin.xml",
+        "source": "com.solaro.app-main-37:/layout/list_item_product_admin.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/activity_user_dashboard.xml",
+        "source": "com.solaro.app-main-37:/layout/activity_user_dashboard.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/activity_register.xml",
+        "source": "com.solaro.app-main-37:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/list_item_maintenance.xml",
+        "source": "com.solaro.app-main-37:/layout/list_item_maintenance.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/activity_payment.xml",
+        "source": "com.solaro.app-main-37:/layout/activity_payment.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/activity_about.xml",
+        "source": "com.solaro.app-main-37:/layout/activity_about.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/activity_splash.xml",
+        "source": "com.solaro.app-main-37:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/activity_request_installation.xml",
+        "source": "com.solaro.app-main-37:/layout/activity_request_installation.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/activity_manage_users.xml",
+        "source": "com.solaro.app-main-37:/layout/activity_manage_users.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/nav_header.xml",
+        "source": "com.solaro.app-main-37:/layout/nav_header.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/activity_request_maintenance.xml",
+        "source": "com.solaro.app-main-37:/layout/activity_request_maintenance.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/list_item_request_history.xml",
+        "source": "com.solaro.app-main-37:/layout/list_item_request_history.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/list_item_installation.xml",
+        "source": "com.solaro.app-main-37:/layout/list_item_installation.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/activity_admin_dashboard.xml",
+        "source": "com.solaro.app-main-37:/layout/activity_admin_dashboard.xml"
+    },
+    {
+        "merged": "com.solaro.app-mergeReleaseResources-35:/layout/activity_manage_products.xml",
+        "source": "com.solaro.app-main-37:/layout/activity_manage_products.xml"
+    }
+]

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="ic_launcher_background">#E6AE0E</color>
+    <color name="md_theme_background">#FDFCF5</color>
+    <color name="md_theme_error">#BA1A1A</color>
+    <color name="md_theme_onBackground">#1F1B16</color>
+    <color name="md_theme_onError">#FFFFFF</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_onPrimaryContainer">#2C1A00</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+    <color name="md_theme_onSecondaryContainer">#011F2B</color>
+    <color name="md_theme_onSurface">#1F1B16</color>
+    <color name="md_theme_onSurfaceVariant">#4F4539</color>
+    <color name="md_theme_primary">#E6AE0E</color>
+    <color name="md_theme_primaryContainer">#FFECB3</color>
+    <color name="md_theme_secondary">#03A9F4</color>
+    <color name="md_theme_secondaryContainer">#B3E5FC</color>
+    <color name="md_theme_surface">#FDFCF5</color>
+    <color name="md_theme_surfaceVariant">#EDE1CF</color>
+    <color name="status_blue">#2196F3</color>
+    <color name="status_green">#4CAF50</color>
+    <color name="status_red">#F44336</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="about_app_description">Welcome to Solaro 🌞, your partner in clean energy! \nWe believe that switching to solar should be a simple and transparent process. \n\nWith the Solaro app, you can easily request a new \nsolar panel installation for your home or business, see the live status of your requests, and schedule maintenance to keep your system running perfectly. \n\nThank you for taking a step towards a sustainable future with us. 🌳\n</string>
+    <string name="about_us_title">About Us</string>
+    <string name="active_requests">You have no active requests.</string>
+    <string name="add_new_product">Add New Product</string>
+    <string name="add_new_product_admin">Add New Product</string>
+    <string name="add_new_products">Add New Product</string>
+    <string name="admin_dashboard_title">Admin Dashboard</string>
+    <string name="admin_panel">Admin Panel</string>
+    <string name="app">App</string>
+    <string name="app_name">Solaro</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_numbers">Card Number</string>
+    <string name="cvv">CVV</string>
+    <string name="delete_button">Delete</string>
+    <string name="description">Description</string>
+    <string name="enter_card_details">Enter Card Details</string>
+    <string name="expiry_mm_yy">Expiry (MM/YY)</string>
+    <string name="generated_value">Estimated 450 kWh generated this month!\nThat\'s around 320 kg of CO2 saved. 🌳</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_describe_issue">Describe the issue in detail…</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_username">Username</string>
+    <string name="image_url">Image URL</string>
+    <string name="installation_address_hint">Full installation address</string>
+    <string name="installation_requests_title">Installation Requests</string>
+    <string name="login_button_text">Login</string>
+    <string name="login_prompt">Already have an account? Login</string>
+    <string name="login_title">Welcome Back</string>
+    <string name="logo_content_description">App Logo</string>
+    <string name="maintenance_request_title">New Maintenance Ticket</string>
+    <string name="maintenance_tickets_title">Maintenance Tickets</string>
+    <string name="manage_installations">Manage Installations</string>
+    <string name="manage_maintenance">Manage Maintenance</string>
+    <string name="manage_products">Manage Products</string>
+    <string name="manage_products_admin">Manage Products</string>
+    <string name="manage_users">Manage Users</string>
+    <string name="menu_account">Profile</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_manage_installations">Manage Installations</string>
+    <string name="menu_manage_maintenance">Manage Maintenance</string>
+    <string name="menu_manage_users">Manage Users</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="price_e_g_13500_00">Price (e.g., 13500.00)</string>
+    <string name="product_name">Product Name</string>
+    <string name="register_button_text">Register</string>
+    <string name="register_prompt">Don\'t have an account? Register</string>
+    <string name="register_title">Create Your Account</string>
+    <string name="request_installation_title">New Installation Request</string>
+    <string name="request_maintenance">Request Maintenance</string>
+    <string name="request_new_installation">Request New Installation</string>
+    <string name="solar_panels_roof">Solar panels on a roof</string>
+    <string name="solar_products_shop">Solar Products Shop</string>
+    <string name="solarpanel_bg">Solar panels background</string>
+    <string name="submit_request_button">Submit Request</string>
+    <string name="submit_ticket_button">Submit Ticket</string>
+    <string name="update_status_button">Update Status</string>
+    <string name="user_management_title">Manage Users</string>
+    <string name="your_requests">Your Requests</string>
+    <string name="your_solar_impact">Your Solar Impact</string>
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/md_theme_primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_icon</item>
+        <item name="postSplashScreenTheme">@style/Theme.Solaro</item>
+    </style>
+    <style name="Theme.Solaro" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/md_theme_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_onPrimaryContainer</item>
+        
+        <item name="colorSecondary">@color/md_theme_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_onSecondaryContainer</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        
+        <item name="android:colorBackground">@color/md_theme_background</item>
+        <item name="colorSurface">@color/md_theme_surface</item>
+        <item name="colorOnSurface">@color/md_theme_onSurface</item>
+    </style>
+</resources>
